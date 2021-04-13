@@ -10,14 +10,14 @@ import Button from "elements/Button";
 
 import formatNumber from "utils/formatNumber";
 
-function showMostPicked(props) {
-  window.scrollTo({
-    top: props.refMostPicked.current.offsetTop - 30,
-    behavior: "smooth",
-  });
-}
-
 export default function Hero(props) {
+  function showMostPicked() {
+    window.scrollTo({
+      top: props.refMostPicked.current.offsetTop - 30,
+      behavior: "smooth",
+    });
+  }
+
   return (
     <section className="container pt-4">
       <div className="row align-items-center">
